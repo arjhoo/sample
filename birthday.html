@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Happy Birthday!</title>
+    <style>
+        body {
+            background-color: #F5E5D5;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
+        h1 {
+            font-size: 72px;
+            color: #d82f35;
+            margin-top: 50px;
+        }
+        p {
+            font-size: 36px;
+            color: #000000;
+            margin-top: 30px;
+            margin-bottom: 50px;
+        }
+        img {
+            display: block;
+            margin: 0 auto;
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            box-shadow: 5px 5px 10px #dadada;
+        }
+        button {
+            background-color: #EE6E73;
+            color: white;
+            font-size: 24px;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            margin-bottom: 50px;
+            box-shadow: 3px 3px 5px #D1D1D1;
+        }
+        button:hover {
+            background-color: #a4383c;
+        }
+    </style>
+</head>
+<body>
+    <!-- Add header image and message -->
+    <img src="mitu.jpeg" alt="Birthday header">
+    <h1>Happy Birthday My Love!</h1>
+    <p><b> <i>  I wish I could attach my heart to this Birthday wish.
+ Only then you might understand how much you mean to me.
+ I hope you are always happy, and I will try to make that reality for you.</i></b></p>
+    <!-- Add birthday cake image and button -->
+    <img src="cake.jpg" alt="Birthday cake">
+    <button onclick="playSound()">Play Birthday Song</button>
+    <!-- Add audio element for birthday song -->
+    <audio id="birthday-song" src="birthday.mp3"></audio>
+    <script>
+        // Define playSound function
+        function playSound() {
+            var sound = document.getElementById("birthday-song");
+            sound.play();
+        }
+    </script>
+</body>
+</html>
